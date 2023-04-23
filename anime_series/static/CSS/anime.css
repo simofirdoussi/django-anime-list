@@ -1,0 +1,61 @@
+.title{
+    text-align: center;
+}
+.anime_title{
+    text-align: center;
+    color: white;
+}
+
+.bio{
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 5px;
+
+}
+header{
+    color: white;
+}
+body{
+    background-color: rgb(24, 24, 24);
+}
+
+.row{
+    text-align: center;
+}
+
+#Images{
+    margin: auto;
+    /* box-shadow: 2px 2px 2px rgb(170, 170, 170); */
+    border-radius: 2%;
+    width: 1000px;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    text-align: center;
+
+}
+
+
+
+
+
+.bio2{
+    color: white;
+
+    margin-bottom: 40px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 5px solid white;
+}
+
+.title2{
+    color: white;
+
+}
+
+.name{
+    color: white;
+    margin: auto;
+    text-align: center;
+}

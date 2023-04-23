@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime List</title>
+    <link rel="stylesheet" href="{% static "CSS/anime.css" %}">
+</head>
+<body>
+    <header>
+        <h1 class="title">Top 10 Best Animes of All Time!</h1>
+    </header>
+    <main>
+        <ul>
+        <div class"row"> {% for anime in animeseries %}
+            <h2 class="anime_title" >{{anime.name}}</h2>
+            <img id="Images" src="{{ anime.image }}">
+            <div class="bio">{{ anime.name }} {{ anime.description }}</div>
+            <a href={% url 'anime-individual' anime.id %}>go to anime</a>
+        </div>
+        {% endfor %}
+
+        </ul>
+    </main>
+</body>
+</html>
+
+
+{% comment %}
+
+<body>
+    <header>
+        <nav>
+            <a class="Button1" href="/recipes">Main page</a>
+            <a href="{% url 'create_recipe' %}">Create a recipe</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="line1">Scrumptious Recipes</h1>
+        <h2>All the food that's fit to eat</h2>
+        <div class="row"> {% for recipe in recipe_list %}<div>
+                <h3>
+                    <a id="link" href="{% url 'show_recipe' recipe.id %}">{{ recipe.title }}</a>
+                </h3>
+                <img id="Images" src="{{ recipe.picture }}">
+                <div id="rating">4.3 stars</div>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+    <footer>
+        Made with love by Scrumptious Recipes
+    </footer>
+</body>
+
+</html> {% endcomment %}
